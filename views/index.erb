@@ -1,0 +1,10 @@
+<% if @names%>
+<h1>Welcome <%= @names%> to battleships!</h1>
+<% end %>
+
+
+<form action="/" method="post"> 
+  <input type="text" name="playerone">
+  <input type="text" name="playertwo">
+  <input type="submit" value="Submit">
+</form>

@@ -7,7 +7,15 @@ class Battle < Sinatra::Base
   end
 
   get '/' do
-    'Hello Battle!'
+    'Hello Players, Please enter your names'
+    erb :index
+
+  end
+
+  post '/' do
+    @playerone = params[:playerone]
+    @playertwo = params[:playertwo] 
+    erb :index
   end
 
   # start the server if ruby file executed directly
